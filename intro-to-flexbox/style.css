@@ -25,7 +25,16 @@ h3 {
 /* --- Groups & Items --- */
 
 .group {
+  display: flex;
+  flex-direction: row; /* or column, row-reverse, column-reverse */
 }
 
 .item {
+  flex: 1; /*tells all the .item containers to all display at the same width*/
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2; /*when applied in addition to the .item class, the new container
+  will display at the size of the others within that group*/
 }
