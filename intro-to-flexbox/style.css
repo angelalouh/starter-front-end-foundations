@@ -22,6 +22,21 @@ h3 {
   border-bottom: 1px solid lightgray;
 }
 
+p {
+  font-size: 14px;
+}
+
+/*Media Query: the "all" type (most common type and default in HTML5) applies the media query
+ to every media type. "min-width" is the media feature.*/
+@media all and (min-width: 800px) {
+  p {
+    font-size: 20px;
+  }
+}
+/*The code above says the paragraph should generally display at 14px in size. It will only display at
+ 24px when the broswer has a width of 800px or greater.*/
+
+
 /* --- Groups & Items --- */
 
 .group {
