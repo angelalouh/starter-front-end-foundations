@@ -1,3 +1,72 @@
 body {
   margin: 0;
 }
+
+header {
+  background-color: #000;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: #fff;
+  text-align: center;
+  /* Removes the default margin and spacing around the 'h1' element. */
+  margin: 0;
+  /* Pushes the text down 20 pixels from the top of the page */
+  padding-top: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  /* Removes the default padding to the left of the unordered list. */
+  padding-left: 0;
+  /* Removes the bullet points from the list items within the unordered list. */
+  list-style: none;
+}
+
+header nav ul li a {
+  /* The link color is white. */
+  color: #fff;
+  /* Removes the underline from the link. */
+  text-decoration: none;
+  /* Applies 20px of margin to the right of each link, creating a visual gap between the navigation links  */
+  margin: 0 20px 0 0 ;
+}
+
+/* This selector targets the last list item's contained anchor (link). */
+header nav ul li:last-child a {
+  /* Removes the margin to the right of the last anchor tag so that the nav appears centered. */
+  margin-right: 0;
+}
+
+/* Adding media query: when web browser is larger than 600px, apply these rules. */
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    /* Pushes the items (the title and nav) to the far sides of the browser with space between them. */
+    justify-content: space-between;
+    /* Adds 0 pixels padding top and bottom, and 30 pixels padding left and right. */
+    padding: 0 30px;
+  }
+  
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+  }
+
+  header nav {
+    margin-top: 8px;
+  }
+
+  header nav ul li a:hover {
+    /* Targets the change when a user holds the pointer over the anchor tag 
+       (link) within the list items within the unordered list that 
+       is within the navigation that is within the header. */
+    color: #bdbdbd;
+  }
+}
