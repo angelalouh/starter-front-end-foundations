@@ -35,7 +35,7 @@ header nav ul li a {
   /* Removes the underline from the link. */
   text-decoration: none;
   /* Applies 20px of margin to the right of each link, creating a visual gap between the navigation links  */
-  margin: 0 20px 0 0 ;
+  margin: 0 20px 0 0;
 }
 
 /* This selector targets the last list item's contained anchor (link). */
